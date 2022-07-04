@@ -1,0 +1,224 @@
+:root {
+  --black: #212121;
+  --blue: #2196f3;
+  --white: #fff;
+  --grey: #757575;
+  --primary-font: 'Roboto', sans-serif;
+  --secondry-font: 'Verdana', sans-serif;
+}
+
+body {
+  font-size: 14px;
+  font-family: 'Roboto', sans-serif;
+  letter-spacing: 0.03em;
+  color: var(--black);
+  background-color: var(--white);
+}
+
+.navigation .current {
+  color: var(--blue);
+}
+.header-logo {
+  font-family: 'Raleway';
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.2;
+  color: var(--black);
+}
+
+.footer-logo {
+  font-family: 'Raleway';
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.2;
+  color: var(--white);
+}
+
+.buttons-filter .current {
+  color: var(--white);
+  background: var(--blue);
+  /* box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
+    0px 2px 2px rgba(0, 0, 0, 0.12); */
+}
+.header-span {
+  color: var(--blue);
+}
+
+.footer-span {
+  color: var(--blue);
+}
+
+.navigation > li > a {
+  color: var(--black);
+  font-weight: 500;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+}
+
+.navigation > li > a:hover,
+.navigation > li > a:focus {
+  color: var(--blue);
+}
+
+.contacts > li > a {
+  font-weight: 500;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+  font-style: normal;
+}
+
+.contacts .contacts-footer {
+  color: rgba(255, 255, 255, 0.6);
+}
+
+.adress {
+  line-height: 1.7;
+  color: var(--white);
+}
+
+.contacts > li > a:hover,
+.contacts > li > a:focus {
+  color: var(--white);
+}
+
+header {
+  background: var(--white);
+}
+
+.hero {
+  background: #2f303a;
+}
+
+.hero-title {
+  font-weight: 900;
+  font-size: 44px;
+  line-height: 1.36;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+
+  color: var(--white);
+}
+
+.button-hero {
+  color: var(--white);
+  width: 200px;
+  height: 50px;
+  font-size: 16px;
+  line-height: 1.87;
+  letter-spacing: 0.06em;
+
+  background: var(--blue);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border: none;
+}
+
+.button-hero:hover,
+.button-hero:focus {
+  background: #188ce8;
+}
+
+.button-text {
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.9;
+  align-items: center;
+  text-align: center;
+  letter-spacing: 0.06em;
+  color: var(--white);
+}
+
+.info > li > h3 {
+  font-size: 14px;
+  line-height: 1.14;
+  text-transform: uppercase;
+  color: var(--black);
+}
+.info > li > p {
+  line-height: 1.7;
+  color: var(--grey);
+}
+
+.work-title {
+  font-size: 36px;
+  line-height: 1.16;
+  color: var(--black);
+  text-align: center;
+}
+
+.team {
+  background: #f5f4fa;
+}
+
+.team-list > li {
+  /* box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 0px 0px 4px 4px; */
+  background: #ffffff;
+}
+
+.team-list > li > h3 {
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 1.2;
+  color: inherit;
+}
+
+.team-list > li > p {
+  font-size: 16px;
+  line-height: 1.2;
+  color: var(--grey);
+}
+
+#footer {
+  background: #2f303a;
+}
+
+.adress {
+  line-height: 1.7;
+  color: var(--white);
+  font-style: normal;
+}
+
+.buttons-filter > li > button {
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 1.6;
+  text-align: center;
+  color: var(--black);
+  background: #f5f4fa;
+  border-radius: 4px;
+  font-family: inherit;
+}
+
+.buttons-filter > li > button:hover,
+.buttons-filter > li > button:focus {
+  color: var(--white);
+  background: var(--blue);
+  /* box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
+    0px 2px 2px rgba(0, 0, 0, 0.12); */
+}
+
+a {
+  text-decoration: none;
+}
+
+.portfolio > li > a > h2 {
+  font-size: 18px;
+  line-height: 2;
+  letter-spacing: 0.06em;
+  color: inherit;
+}
+
+.portfolio > li > p {
+  font-size: 16px;
+  line-height: 1.8;
+  color: var(--grey);
+}
+
+button {
+  cursor: pointer;
+}
+
+ul {
+  list-style-type: none;
+}
