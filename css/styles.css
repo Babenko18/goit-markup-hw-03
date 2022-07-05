@@ -67,8 +67,8 @@ body {
   font-style: normal;
 }
 
-.contacts .contacts-footer {
-  color: rgba(255, 255, 255, 0.6);
+.contacts .contacts-info {
+  color: rgba(143, 20, 20, 0.6);
 }
 
 .adress {
@@ -79,6 +79,7 @@ body {
 .contacts > li > a:hover,
 .contacts > li > a:focus {
   color: var(--white);
+  /* поменять цвета на серый в футере и хедере зарделить их */
 }
 
 header {
