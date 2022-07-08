@@ -420,6 +420,19 @@ a {
   color: var(--black);
 }
 
+.portfolio-border {
+  border: 1px solid #eeeeee;
+  border-top: 0;
+  padding: 20px 24px 20px 24px;
+}
+
+.portfolio > li {
+  margin-bottom: 30px;
+}
+
+.portfolio > li:nth-last-child(-n + 3) {
+  margin-bottom: 0;
+}
 .portfolio-description {
   font-size: 16px;
   line-height: 1.87;
@@ -433,4 +446,10 @@ button {
 
 ul {
   list-style-type: none;
+}
+
+.portfolio {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
 }
