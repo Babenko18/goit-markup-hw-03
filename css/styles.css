@@ -14,6 +14,44 @@ body {
   color: var(--black);
   background-color: var(--white);
 }
+button {
+  cursor: pointer;
+}
+
+ul {
+  list-style-type: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ul {
+  margin: 0;
+}
+
+a {
+  text-decoration: none;
+  padding-left: 0;
+  margin: 0;
+}
+
+.container {
+  width: 1200px;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+img {
+  display: block;
+  margin: 0;
+  padding: 0;
+}
 
 .navigation .current {
   color: var(--blue);
@@ -34,12 +72,6 @@ body {
   color: var(--white);
 }
 
-.buttons-filter .current {
-  color: var(--white);
-  background: var(--blue);
-  /* box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
-    0px 2px 2px rgba(0, 0, 0, 0.12); */
-}
 .header-span {
   color: var(--blue);
 }
@@ -48,11 +80,16 @@ body {
   color: var(--blue);
 }
 
+/* Navigation */
+
 .navigation > li > a {
   color: var(--black);
   font-weight: 500;
   line-height: 1.14;
   letter-spacing: 0.02em;
+  padding-top: 32px;
+  padding-bottom: 32px;
+  display: block;
 }
 
 .navigation > li > a:hover,
@@ -60,11 +97,46 @@ body {
   color: var(--blue);
 }
 
+.navigation {
+  display: flex;
+}
+
+.main-nav {
+  display: flex;
+  border-bottom: 1px solid transparent;
+}
+
+.header-nav {
+  display: flex;
+  align-items: center;
+}
+.navigation .navigation-list {
+  margin-right: 50px;
+}
+
+.navigation .navigation-list:last-child {
+  margin-right: 0;
+}
+
+/* Contacts */
+.contacts {
+  display: flex;
+  margin-left: auto;
+}
+
+.contacts .contacts-list + .contacts-list {
+  margin-left: 50px;
+}
 .contacts > li > a {
   font-weight: 500;
   line-height: 1.14;
   letter-spacing: 0.02em;
   font-style: normal;
+  padding-top: 32px;
+  padding-bottom: 32px;
+  display: block;
+
+  color: var(--grey);
 }
 
 header .contacts .contacts-info {
@@ -99,8 +171,21 @@ header {
   background: var(--white);
 }
 
-.hero {
+/* Hero */
+
+.section {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+
+.section:nth-child(3) {
+  padding-top: 0px;
+}
+
+.hero.section {
   background: #2f303a;
+  padding-top: 200px;
+  padding-bottom: 200px;
 }
 
 .hero-title {
@@ -110,6 +195,9 @@ header {
   letter-spacing: 0.06em;
   text-transform: uppercase;
 
+  width: 696px;
+  text-align: center;
+  margin: 0px auto 30px auto;
   color: var(--white);
 }
 .h1-hidden {
@@ -121,6 +209,12 @@ header {
 }
 
 .button-hero {
+  display: block;
+  min-width: 200px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 10px 32px;
+  white-space: nowrap;
   color: var(--white);
   width: 200px;
   height: 50px;
@@ -131,6 +225,11 @@ header {
   background: var(--blue);
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border: none;
+  border-radius: 4px;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 700;
+  align-items: center;
+  text-align: center;
 }
 
 .button-hero:hover,
@@ -138,7 +237,7 @@ header {
   background: #188ce8;
 }
 
-.button-text {
+/* .button-text {
   font-weight: 700;
   font-size: 16px;
   line-height: 1.9;
@@ -146,34 +245,53 @@ header {
   text-align: center;
   letter-spacing: 0.06em;
   color: var(--white);
-}
+} */
 
+/* Benefits */
+
+.info {
+  display: flex;
+  justify-content: space-around;
+}
 .info > li > h3 {
   font-size: 14px;
   line-height: 1.14;
   text-transform: uppercase;
   color: var(--black);
+  margin-bottom: 10px;
+  width: 270px;
 }
 .info > li > p {
   line-height: 1.7;
   color: var(--grey);
+  width: 270px;
 }
+
+/* Our Work */
 
 .section-title {
   font-size: 36px;
   line-height: 1.16;
   color: var(--black);
   text-align: center;
+  margin-bottom: 50px;
 }
+
+.about {
+  display: flex;
+  justify-content: space-around;
+}
+
+/* Tean */
 
 .team {
   background: #f5f4fa;
 }
 
 .team-list > li {
-  /* box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
-  border-radius: 0px 0px 4px 4px; */
+  border-radius: 0px 0px 4px 4px;
   background: #ffffff;
 }
 
@@ -182,25 +300,64 @@ header {
   font-weight: 500;
   line-height: 1.2;
   color: inherit;
+  text-align: center;
+  margin-top: 30px;
+  margin-bottom: 10px;
 }
 
 .team-list > li > p {
   font-size: 16px;
   line-height: 1.2;
   color: var(--grey);
+  text-align: center;
+  margin-bottom: 30px;
 }
+
+/* Footer */
 
 #footer {
   background: #2f303a;
 }
 
+#footer .contacts {
+  display: block;
+}
+
 .adress {
+  font-weight: 400;
   line-height: 1.7;
   color: var(--white);
+  letter-spacing: 0.03em;
   font-style: normal;
 }
 
+#footer .footer-logo {
+  margin-bottom: 20px;
+}
+.footer-list {
+  color: rgba(255, 255, 255, 0.6);
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+  font-style: normal;
+  display: block;
+}
+.footer-list > li > a {
+  margin-bottom: 9px;
+}
+
+.footer-list li:last-child {
+  margin-bottom: 0;
+}
+
+.footer-section {
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+
 .buttons-filter > li > button {
+  font-family: inherit;
   font-size: 16px;
   font-weight: 500;
   line-height: 1.6;
@@ -209,16 +366,34 @@ header {
   background: #f5f4fa;
   border-radius: 4px;
   font-family: inherit;
+  border: none;
+  margin-right: 8px;
+  margin-bottom: 56px;
+  padding: 6px 22px;
+}
+
+.buttom-filter:last-child button {
+  margin-right: 0;
 }
 
 .buttons-filter > li > button:hover,
 .buttons-filter > li > button:focus {
   color: var(--white);
   background: var(--blue);
-  /* box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
-    0px 2px 2px rgba(0, 0, 0, 0.12); */
+  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
+    0px 2px 2px rgba(0, 0, 0, 0.12);
 }
 
+.buttons-filter {
+  display: flex;
+  justify-content: center;
+}
+.buttons-filter .current {
+  color: var(--white);
+  background: var(--blue);
+  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
+    0px 2px 2px rgba(0, 0, 0, 0.12);
+}
 a {
   text-decoration: none;
 }
@@ -228,6 +403,7 @@ a {
   line-height: 2;
   letter-spacing: 0.06em;
   color: inherit;
+  margin-bottom: 4px;
 }
 
 /* .portfolio > li > p {

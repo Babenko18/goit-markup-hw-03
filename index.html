@@ -19,58 +19,70 @@
   <body>
     <!--header -->
     <header class="header">
-      <nav class="header-nav">
-        <a href="./index.html" class="header-logo"><span class="header-span">Web</span>Studio</a>
-        <ul class="navigation">
-          <li><a href="./index.html" class="current">Студия</a></li>
-          <li><a href="./portfolio.html">Портфолио</a></li>
-          <li><a href="./index.html">Контакты</a></li>
+      <div class="container main-nav">
+        <nav class="header-nav">
+          <a href="./index.html" class="header-logo"><span class="header-span">Web</span>Studio</a>
+          <ul class="navigation">
+            <li class="navigation-list"><a href="./index.html" class="current">Студия</a></li>
+            <li class="navigation-list"><a href="./portfolio.html">Портфолио</a></li>
+            <li class="navigation-list"><a href="./index.html">Контакты</a></li>
+          </ul>
+        </nav>
+        <ul class="contacts">
+          <li class="contacts-list">
+            <a href="mailto:info@devstudio.com" class="contacts-info">info@devstudio.com</a>
+          </li>
+          <li class="contacts-list">
+            <a href="tel:+380961111111" class="contacts-info">+38 096 111 11 11</a>
+          </li>
         </ul>
-      </nav>
-      <ul class="contacts">
-        <li><a href="mailto:info@devstudio.com" class="contacts-info">info@devstudio.com</a></li>
-        <li><a href="tel:+380961111111" class="contacts-info">+38 096 111 11 11</a></li>
-      </ul>
+      </div>
     </header>
-
     <!-- main -->
     <main>
-      <section class="hero">
-        <h1 class="hero-title">Эффективные решения для вашего бизнеса</h1>
-        <button type="button" class="button-hero">Заказать услугу</button>
+      <section class="hero section">
+        <div class="container">
+          <h1 class="hero-title">Эффективные решения для вашего бизнеса</h1>
+          <button type="button" class="button-hero">Заказать услугу</button>
+        </div>
       </section>
 
       <!-- about -->
-      <section>
-        <h2 hidden class="h2-hidden">About our Studio</h2>
-        <ul class="info">
-          <li>
-            <h3>Внимание к деталям</h3>
-            <p>Идейные соображения, а также начало повседневной работы по формированию позиции.</p>
-          </li>
-          <li>
-            <h3>Пунктуальность</h3>
-            <p>
-              Задача организации, в особенности же рамки и место обучения кадров влечет за собой.
-            </p>
-          </li>
-          <li>
-            <h3>Планирование</h3>
-            <p>
-              Равным образом консультация с широким активом в значительной степени обуславливает.
-            </p>
-          </li>
-          <li>
-            <h3>Современные технологии</h3>
-            <p>Значимость этих проблем настолько очевидна, что реализация плановых заданий.</p>
-          </li>
-        </ul>
+      <section class="section">
+        <div class="container">
+          <h2 hidden class="h2-hidden">About our Studio</h2>
+          <ul class="info">
+            <li>
+              <h3>Внимание к деталям</h3>
+              <p>
+                Идейные соображения, а также начало повседневной работы по формированию позиции.
+              </p>
+            </li>
+            <li>
+              <h3>Пунктуальность</h3>
+              <p>
+                Задача организации, в особенности же рамки и место обучения кадров влечет за собой.
+              </p>
+            </li>
+            <li>
+              <h3>Планирование</h3>
+              <p>
+                Равным образом консультация с широким активом в значительной степени обуславливает.
+              </p>
+            </li>
+            <li>
+              <h3>Современные технологии</h3>
+              <p>Значимость этих проблем настолько очевидна, что реализация плановых заданий.</p>
+            </li>
+          </ul>
+        </div>
       </section>
 
       <!-- Our work -->
       <section class="work">
+        <div class="container"></div>
         <h2 class="section-title">Чем мы занимаемся</h2>
-        <ul>
+        <ul class="about">
           <li>
             <img
               src="./images/Our work/work.jpg"
@@ -122,10 +134,11 @@
     </main>
 
     <!-- footer -->
-    <footer id="footer">
+    <footer id="footer" class="footer-section">
+      <div class="container"></div>
       <a href="./index.html" class="footer-logo"><span class="footer-span">Web</span>Studio</a>
       <address>
-        <ul class="contacts">
+        <ul class="contacts footer-list">
           <li>
             <a
               href="https://goo.gl/maps/piqngm7oDQpEDh6u6"
